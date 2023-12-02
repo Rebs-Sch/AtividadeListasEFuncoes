@@ -109,6 +109,25 @@ $matriz = [
 
 for ($i = 0; $i < 3; $i++){
    for ($j = 0; $j < 3; $j++){
-   print "$matriz[i][j] "}
-print "\n"
+   print "$matriz[i][j] ";
+   }
+print "\n";
 }
+
+Exercício 6:
+
+$matriz = [
+[1, 2, 3],
+[4, 5, 6],
+[7, 8, 9]
+];
+
+for ($i = 0; $i < 3; $i++){
+   $soma = $matriz[i][0] + $matriz[i][1] + $matriz[i][2];
+
+   $result[i] = $soma;
+}
+
+   $soma_todos = $result[0] + $result[1] + $result [2];
+
+   print "$soma_todos";
