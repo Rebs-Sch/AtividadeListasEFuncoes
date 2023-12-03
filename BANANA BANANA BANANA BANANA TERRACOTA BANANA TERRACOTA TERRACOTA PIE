@@ -131,3 +131,23 @@ for ($i = 0; $i < 3; $i++){
    $soma_todos = $result[0] + $result[1] + $result [2];
 
    print "$soma_todos";
+
+Exercício 7: 
+
+$matriz
+
+for($i = 0; $i < 3; $i++){
+   for($i = 0; $i < 3; $i++){
+      $matriz[i][j] = readline("Digite um número: "
+      print "\n")
+   }
+}
+
+for($i = 0; $i < 3; $i++){
+   for($i = 0; $i < 3; $i++){
+      
+      if($matriz[i][j]%2 == 0){
+         print "Você digitou o número par $matriz[i][j] na linha $i e na coluna $j \n"
+      }
+   }
+}
