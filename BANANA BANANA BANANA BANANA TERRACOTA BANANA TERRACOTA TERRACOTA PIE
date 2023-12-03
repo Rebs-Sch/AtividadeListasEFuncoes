@@ -171,3 +171,24 @@ Console: Teste 0 int(5)
          Teste 5 string(4) "nome"
          Teste 6 string(8) "profissao"
          Teste 7 bool(true)
+
+Exercício 10:
+
+$cadeia = readline("Diga uma frase: ");
+print "\n";
+$caracter = readline("Diga o caracter que deseja subtrair ");
+print "\n";
+
+tira_carater ($cadeia, $caracter);
+
+function tira_carater (&$cadeia, &$caracter){
+   $tamanho = mb_strlen($cadeia);
+
+   $cadeia = str_ireplace($caracter, "", $cadeia);
+
+   $tamanho_agora = mb_strlen($cadeia);
+   $numero_caracter = $tamanho - $tamanho_agora;
+
+   print "A frase agora é: $frase \n";
+   print "Foram retirados $numero_caracter caracteres \"$caracter\" da frase.";
+}
